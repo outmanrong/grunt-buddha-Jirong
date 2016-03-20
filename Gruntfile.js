@@ -33,6 +33,13 @@ module.exports = function (grunt) {
 
     // Configuration to be run (and then tested).
     buddha_jirong: {
+      options: {
+        who: 'alpaca', //buddha alpaca
+        commentSymbol: '//',
+      },
+      dist: ['test/fixtures/*.js']
+
+      /* 第一步 清空buddha的内容
       default_options: {
         options: {
         },
@@ -49,6 +56,7 @@ module.exports = function (grunt) {
           'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
         }
       }
+      */
     },
 
     // Unit tests.
